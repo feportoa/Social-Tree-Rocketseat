@@ -52,6 +52,8 @@ header > p.darkPurple {
 /* CSS Selectors */
 body{
     background: var(--body-bg-color-bright);
+
+    transition: all .8s;
 }
 
 header, main, footer {
@@ -73,6 +75,8 @@ header > .contentHolder > .themeSwitcher {
     position: absolute;
     right: 2rem;
     top: 3.5rem;
+
+    transition: all .3s;
 }
 
 header > .contentHolder > img.banner {
@@ -87,6 +91,8 @@ header > .contentHolder > img.banner {
 header > p {
     margin-top: 1.5rem;
     font-size: 1.5rem;
+
+    transition: all .3s;
 }
 
 main > .flexContainer {
@@ -107,6 +113,8 @@ main > .flexContainer > li {
     margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 0.8rem;
+
+    transition: all .3s;
 }
 
 main > .flexContainer > li:nth-child(1){
@@ -121,8 +129,3 @@ footer > .flexContainer {
     justify-content: space-evenly;
     margin-top: 5rem;
 }
-
-footer > .flexContainer > li {
-    
-}
-
