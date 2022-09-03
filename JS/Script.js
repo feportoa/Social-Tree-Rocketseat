@@ -2,6 +2,7 @@
     var body = document.querySelector('body');
     var lightModeSwitch = document.querySelector('.sun');
     var linkItem = document.querySelectorAll('.flexLink');
+    var linkItemAnchor = document.querySelectorAll('.flexLinkAnchor')
     var headerCircle = document.querySelector('.banner');
     var instagramLetters = document.querySelector('header p');
 
@@ -13,6 +14,7 @@ function switchModeDark(){
     lightModeSwitch.classList.toggle('disabled');
     for(c=0;c<linkItem.length;c++){
         linkItem[c].classList.toggle('darkPurple');
+        linkItemAnchor[c].classList.toggle('darkPurple');
     }
     headerCircle.id = 'headerImage';
     instagramLetters.classList.toggle('darkPurple');

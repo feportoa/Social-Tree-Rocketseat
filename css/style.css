@@ -26,6 +26,11 @@ darkPurple -> Letters (li)
 headerImage -> Banner (used for CSS Cascade Sum)
 */
 
+a {
+    text-decoration: none;
+    font-style: none;
+}
+
 .disabled {
     display: none;
 }
@@ -40,12 +45,16 @@ main > ul.flexContainer > li.darkPurple {
    color: var(--purple-dark);
 }
 
-header > .contentHolder > img#headerImage.banner {
-    border: var(--purple-dark) solid 3px; 
-    box-shadow: 0 0 1rem #8347be;
+main > ul.flexContainer > li.darkPurple  > a.darkPurple {
+    color: var(--purple-dark);
 }
 
-header > p.darkPurple {
+header > .contentHolder > img#headerImage.banner {
+    border: var(--purple-dark) solid 3px; 
+    box-shadow: 0 0 1.5rem #8347be;
+}
+
+header > p.darkPurple{
     color: var(--purple-dark);
 }
 
@@ -100,12 +109,13 @@ main > .flexContainer {
     list-style: none;
     text-align: center;
     flex-direction: column;
+    color: var(--purple);
 
     margin: 0 auto;
     width: 33vw;
 }
 
-main > .flexContainer > li {
+main > .flexContainer > li.flexLink{
     width: 100%;
     font-size: 1.8rem;
     font-weight: bold;
@@ -113,12 +123,18 @@ main > .flexContainer > li {
     margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 0.8rem;
+    color: var(--purple);
 
     transition: all .3s;
 }
 
+main > .flexContainer > li.flexLink > a {
+    color: var(--purple);
+}
+
 main > .flexContainer > li:nth-child(1){
     margin-top: 5rem;
+    color: var(--purple);
 }
 
 footer > .flexContainer {
