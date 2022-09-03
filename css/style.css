@@ -40,13 +40,9 @@ body.dark {
     
 }
 
-main > ul.flexContainer > li.darkPurple {
+main > ul.flexContainer > a > li.darkPurple {
    border: var(--purple-dark) solid 3px; 
    color: var(--purple-dark);
-}
-
-main > ul.flexContainer > li.darkPurple  > a.darkPurple {
-    color: var(--purple-dark);
 }
 
 header > .contentHolder > img#headerImage.banner {
@@ -117,7 +113,7 @@ main > .flexContainer {
     width: 33vw;
 }
 
-main > .flexContainer > li.flexLink{
+main > .flexContainer > a > li.flexLink{
     width: 100%;
     font-size: 1.8rem;
     font-weight: bold;
@@ -130,7 +126,7 @@ main > .flexContainer > li.flexLink{
     transition: all .3s;
 }
 
-main > .flexContainer > li.flexLink > a {
+main > .flexContainer > a > li.flexLink {
     color: var(--purple);
 }
 
