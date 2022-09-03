@@ -35,9 +35,18 @@ body.dark {
     
 }
 
-main > ul.flexContainer > li.darkPurple, header > img.headerImage#banner {
+main > ul.flexContainer > li.darkPurple {
    border: var(--purple-dark) solid 3px; 
    color: var(--purple-dark);
+}
+
+header > .contentHolder > img#headerImage.banner {
+    border: var(--purple-dark) solid 3px; 
+    box-shadow: 0 0 1rem #8347be;
+}
+
+header > p.darkPurple {
+    color: var(--purple-dark);
 }
 
 /* CSS Selectors */
@@ -59,14 +68,14 @@ header > .contentHolder {
 }
 
 header > .contentHolder > .themeSwitcher {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     top: 3.5rem;
 }
 
-header > .contentHolder > img#banner {
+header > .contentHolder > img.banner {
     width: 100%;
     height: 100%;
     object-fit: cover;
