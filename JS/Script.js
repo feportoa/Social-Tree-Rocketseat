@@ -5,6 +5,7 @@
     var linkItemAnchor = document.querySelectorAll('.flexLinkAnchor')
     var headerCircle = document.querySelector('.banner');
     var instagramLetters = document.querySelector('header p');
+    var signature = document.querySelector('body section');
 
 
 function switchModeDark(){
@@ -18,6 +19,7 @@ function switchModeDark(){
     }
     headerCircle.id = 'headerImage';
     instagramLetters.classList.toggle('darkPurple');
+    signature.classList.add('darkSignature');
 }
 
 function switchModeBright(){
@@ -29,4 +31,5 @@ function switchModeBright(){
     }
     headerCircle.removeAttribute('id'); 
     instagramLetters.classList.remove('darkPurple');
+    signature.classList.remove('darkSignature');
 }
