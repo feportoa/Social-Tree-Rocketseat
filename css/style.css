@@ -1,0 +1,119 @@
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+html {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+:root {
+    
+    font-family: Poppins, sans-serif;
+    font-size: 62.5%;
+    --body-bg-color-bright: #FAF7FD;
+    --body-bg-color-dark: #202020;
+    --purple-dark: #8347be;
+    --purple: #BB99DD;
+    color: var(--purple);
+
+}
+
+/* JavaScript Mod Classes */
+
+/* JavaScript DOM Classes: 
+disabled -> Icon
+dark -> Body
+darkPurple -> Letters (li)
+headerImage -> Banner (used for CSS Cascade Sum)
+*/
+
+.disabled {
+    display: none;
+}
+
+body.dark {
+    background: var(--body-bg-color-dark);
+    
+}
+
+main > ul.flexContainer > li.darkPurple, header > img.headerImage#banner {
+   border: var(--purple-dark) solid 3px; 
+   color: var(--purple-dark);
+}
+
+/* CSS Selectors */
+body{
+    background: var(--body-bg-color-bright);
+}
+
+header, main, footer {
+    text-align: center;
+}
+
+header > .contentHolder {
+    display: block;
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+header > .contentHolder > .themeSwitcher {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    right: 1rem;
+    top: 3.5rem;
+}
+
+header > .contentHolder > img#banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+    border: #BB99DD solid 3px;
+}
+
+header > p {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+main > .flexContainer {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 33vw;
+}
+
+main > .flexContainer > li {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: var(--purple) solid 3px;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+main > .flexContainer > li:nth-child(1){
+    margin-top: 5rem;
+}
+
+footer > .flexContainer {
+    display: flex;
+    width: 25vw;
+    list-style: none;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+footer > .flexContainer > li {
+    
+}
+
