@@ -9,24 +9,24 @@
 
 function switchModeDark(){
 
-    body.classList.toggle('dark');
-    darkModeSwitch.classList.toggle('disabled');
-    lightModeSwitch.classList.toggle('disabled');
+    body.classList.add('dark');
+    darkModeSwitch.classList.add('disabled');
+    lightModeSwitch.classList.remove('disabled');
     for(c=0;c<linkItem.length;c++){
-        linkItem[c].classList.toggle('darkPurple');
-        linkItemAnchor[c].classList.toggle('darkPurple');
+        linkItem[c].classList.add('darkPurple');
+        linkItemAnchor[c].classList.add('darkPurple');
     }
     headerCircle.id = 'headerImage';
     instagramLetters.classList.toggle('darkPurple');
 }
 
 function switchModeBright(){
-    body.classList.toggle('dark');
-    darkModeSwitch.classList.toggle('disabled');
-    lightModeSwitch.classList.toggle('disabled');
+    body.classList.remove('dark');
+    darkModeSwitch.classList.remove('disabled');
+    lightModeSwitch.classList.add('disabled');
     for(c=0;c<linkItem.length;c++){
-        linkItem[c].classList.toggle('darkPurple');
+        linkItem[c].classList.remove('darkPurple');
     }
     headerCircle.removeAttribute('id'); 
-    instagramLetters.classList.toggle('darkPurple');
+    instagramLetters.classList.remove('darkPurple');
 }
